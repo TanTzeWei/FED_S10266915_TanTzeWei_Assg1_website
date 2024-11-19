@@ -1,0 +1,138 @@
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding:10px 20px;
+    color:white;
+}
+.header-link{
+       position:absolute;
+       color:black;
+       text-decoration: none;
+}
+nav{
+    margin-left:auto;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 25;
+    padding: 25;
+}
+nav a{
+    text-decoration:none;
+    color:black;
+    font-weight: bold;
+}
+nav a:hover{
+    color:red;
+}
+.dropdown{
+    position:relative;
+}
+.dropdown-menu{
+    list-style: none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background-color: white;
+    padding:10px;
+    display:none;
+    border-radius:4px;  
+}
+.dropdown-menu li{
+    padding:15px;
+}
+.dropdown-menu a{
+    color:black;
+    text-decoration: none;
+    display:block;
+}
+.dropdown-menu a:hover{
+    color:red;
+}
+.dropdown:hover .dropdown-menu{     /*This is to make sure that parent and child relationship is visible*/
+    display:block;
+}
+.hero {
+    position:relative;
+    height: 70vh;
+    background: url('images/footwear\ lab.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-heading{
+    color:white;
+    font-size: 3em;
+}
+.EandC{
+    display:flex;
+    justify-content: space-between;
+    gap:20px;
+}
+.essential,.classic{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+.essential img,.classic img{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    margin:0;
+}
+.button{
+    position:relative;
+    top:10px;
+    text-align:center;
+    background-color: black;
+    color:white;
+    border:10px solid black
+}
+.essential p, .classic p{
+    display:flex;
+    justify-content: center;
+}
+.MandHTES{
+    display:flex;
+    justify-content: space-between;
+    gap:20px;
+}
+.Minimal,.HTES{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+.Minimal img,.HTES img{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    margin:0;
+}
+.Minimal p, .HTES p{
+    display:flex;
+    justify-content: center;
+}
+.footer{
+    background-color: black;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-icon img{
+       width:30px;
+       height:auto;
+       margin:10px 0;
+       justify-content: center;
+}
+

@@ -1,0 +1,195 @@
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding:10px 20px;
+    color:white;
+}
+.header-link{
+       position:absolute;
+       color:black;
+       text-decoration: none;
+}
+nav{
+    margin-left:auto;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 25;
+    padding: 25;
+}
+nav a{
+    text-decoration:none;
+    color:black;
+    font-weight: bold;
+}
+nav a:hover{
+    color:red;
+}
+.dropdown{
+    position:relative;
+}
+.dropdown-menu{
+    list-style: none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background-color: white;
+    padding:10px;
+    display:none;
+    border-radius:4px;  
+}
+.dropdown-menu li{
+    padding:15px;
+}
+.dropdown-menu a{
+    color:black;
+    text-decoration: none;
+    display:block;
+}
+.dropdown-menu a:hover{
+    color:red;
+}
+.dropdown:hover .dropdown-menu{     /*This is to make sure that parent and child relationship is visible*/
+    display:block;
+}
+#class-section{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+}
+.background-section{
+    position:relative;
+    background-image: url("premium-white2.jpg");
+    background-size: cover;
+}
+#promo-click{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border:solid 2px black;
+    margin:20px;
+}
+#overlap{
+    position:relative;
+    background-color: black;
+    color:white;
+    justify-content: center;
+    align-items:center;
+    padding:20px;
+}
+.desc1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align:center;
+    
+}
+#EM-sneaker{
+    display:flex;
+    justify-content: center;
+    margin:20px;
+    padding:20px;
+    font-size: large;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#EM-sneaker2{
+    display:flex;
+    justify-content: center;
+    margin:-20px;
+}
+.button{
+    display:flex;
+    justify-content: center;
+    gap:15px;
+}
+.btn{
+    padding:20px;
+    margin:20px;
+    border:2px solid black;
+    background-color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background-color: lightgray
+}
+.footer{
+    background-color: black;
+    color:white;
+    text-align:center;
+    padding:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-icon img{
+       width:30px;
+       height:auto;
+       margin:10px 0;
+       justify-content: center;
+}
+.lab-items{
+    display:flex;
+    gap:25px;
+    justify-content: space-between;
+    margin:30px;
+}
+#lab-heading{
+    display:flex;
+    justify-content: center;
+}
+#lab-para{
+    display:flex;
+    justify-content: center;
+    margin:20px;
+}
+#lab-heading{
+    display:flex;
+    justify-content: center;
+}
+#desc-heading{
+    display:flex;
+    justify-content: center;
+}
+.info td{
+     padding:25px;
+}
+.sneaker-lab img{
+       width:100%
+}
+.tailor-lab img{
+    width:100%;
+}
+
+.hero {
+    position:relative;
+    height: 70vh;
+    background: url('images/premium-white2.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-heading{
+    color:white;
+    font-size: 3em;
+}
+#overlap {
+    margin: 20px 0; /* Add space instead of negative margins */
+}
+
+#EM-sneaker2 {
+    margin: 10px 0; /* Avoid using negative margins */
+}
+.desc1 {
+    display: flex;
+    flex-direction: column; /* Ensure vertical stacking */
+    align-items: center;    /* Center text horizontally */
+    justify-content: center; /* Center text vertically */
+}
+
+
