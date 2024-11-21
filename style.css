@@ -178,18 +178,6 @@ nav a:hover{
     color:white;
     font-size: 3em;
 }
-#overlap {
-    margin: 20px 0; /* Add space instead of negative margins */
-}
 
-#EM-sneaker2 {
-    margin: 10px 0; /* Avoid using negative margins */
-}
-.desc1 {
-    display: flex;
-    flex-direction: column; /* Ensure vertical stacking */
-    align-items: center;    /* Center text horizontally */
-    justify-content: center; /* Center text vertically */
-}
 
 
