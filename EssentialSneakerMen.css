@@ -1,0 +1,57 @@
+.hero {
+    position:relative;
+    height: 70vh;
+    background: url('images/EssenSneaimg.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sub-text{
+    color:white;
+    font-size: 3em;
+}
+.hero-heading{
+    color:white;
+    padding-bottom:-20px;
+    font-size: 2em;
+    margin-bottom: -30px;
+}
+#shoe-header{
+    display:flex;
+    justify-content: center;
+}
+.product{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.product-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.product-options{
+    gap:20px;
+}
+.product-options label,
+.product-options select,
+.product-options button {
+    width: 100%; 
+    max-width: 200px;
+}
+.button{
+    display:flex;
+    background-color:black;
+    color:white;
+    border:none;
+    padding:10px;
+    font-size:14px;
+}
+.button:hover{
+    background-color: grey;
+}

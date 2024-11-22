@@ -36,7 +36,8 @@
     text-align:center;
     background-color: black;
     color:white;
-    border:10px solid black
+    border:10px solid black;
+    text-decoration: none;
 }
 .essential p, .classic p{
     display:flex;
