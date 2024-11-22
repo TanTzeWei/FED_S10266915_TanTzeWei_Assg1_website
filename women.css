@@ -44,4 +44,14 @@
     flex-direction: column;
     text-align:center;
 } 
+.hero2 {
+    position:relative;
+    height: 70vh;
+    background: url('images/women-essen-sneaker.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 

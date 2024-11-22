@@ -19,7 +19,7 @@
                     <a href="Sneaker.html">Men</a>
                     <ul class="dropdown-menu">
                         <li><a href="Sneaker.html">Sneaker Lab</a></li>
-                        <li><a href="#">Tailoring Lab</a></li>
+                        <li><a href="Tailoring-Lab.html">Tailoring Lab</a></li>
                     </ul>
                 </li>
                 <li><a href="Women.html">Women</a></li>
@@ -34,11 +34,26 @@
             </ul>
         </nav> 
         </header>
-    <section>
-           <div class="giftcard">
-              <img src="images/gift-card.jpg" alt="gift-card-image">
-              <p class="gift-card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quisquam beatae modi rerum expedita. Quasi non aut, quod adipisci nemo voluptates ipsam ullam nisi repudiandae impedit temporibus cupiditate quos odit!</p>
-           <button class="btn"> Purchase </button>
+    <section class="gift-card-section">
+           <div class="gift-card-image">
+            <img src="images/gift-card.jpg" alt="E-Gift Card">
+           </div>
+           <div class="gift-card-details">
+            <h2>Gift Card</h2>
+            <p class="price">From $50.00</p>
+            <p class="description">Purchasing this E-Gift Card creates a unique code. 
+
+                The gift card recipient can enter this code at checkout to subtract the gift card value from their order total.</p>
+                
+            <p>This gift card never expires.</p>
+            <label for="value-select">Value:</label>
+            <select id="value-select" name="value">
+                <option>Select value</option>
+                <option>$50</option>
+                <option>$100</option>
+                <option>$200</option>
+            </select>
+            <button class="btn-purchase">Purchase</button>
            </div>
     </section>
 </body>

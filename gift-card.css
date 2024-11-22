@@ -1,9 +1,48 @@
-.giftcard{
+.gift-card-section{
     display:flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    gap:40px;
+    padding:40px;
 }
-.gift-card-text{
-    padding:20px;
-    margin:20px;
+.gift-card-image img{
+    border-radius: 8px;
+    background-color: grey;
+}
+.gift-card-details h2{
+     font-size: 32px;
+     margin-bottom: 10px;
+}
+.price{
+    font-size: 20px;
+    color:#666;
+    margin-bottom:20px;
+}
+.description{
+    font-size:16px;
+    margin-bottom:10px;
+}
+label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+select{
+    padding:10px;
+    font-size:16px;
+    width: 100%;
+    max-width:200px;
+    margin-bottom:20px;
+}
+.btn-purchase {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.btn-purchase:hover {
+    background-color: #333;
 }
