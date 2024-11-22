@@ -1,0 +1,157 @@
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding:10px 20px;
+    color:white;
+}
+.header-link{
+       position:absolute;
+       color:black;
+       text-decoration: none;
+}
+nav{
+    margin-left:auto;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 25;
+    padding: 25;
+}
+nav a{
+    text-decoration:none;
+    color:black;
+    font-weight: bold;
+}
+nav a:hover{
+    color:red;
+}
+.dropdown{
+    position:relative;
+}
+.dropdown-menu{
+    list-style: none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background-color: white;
+    padding:10px;
+    display:none;
+    border-radius:4px;  
+}
+.dropdown-menu li{
+    padding:15px;
+}
+.dropdown-menu a{
+    color:black;
+    text-decoration: none;
+    display:block;
+}
+.dropdown-menu a:hover{
+    color:red;
+}
+.dropdown:hover .dropdown-menu{     /*This is to make sure that parent and child relationship is visible*/
+    display:block;
+}
+.hero {
+    position:relative;
+    height: 70vh;
+    background: url('images/Women-image.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-heading{
+    color:white;
+    font-size: 3em;
+}
+.desc{
+    display: flex;
+    color:white;
+}
+#btn{
+    position:relative;
+    top:10px;
+    text-align:center;
+    background-color: black;
+    color:white;
+    border:10px solid black
+}
+.background-section{
+    position:relative;
+    background-image: url("premium-white2.jpg");
+    background-size: cover;
+}
+#overlap{
+    position:relative;
+    background-color: white;
+    color:black;
+    justify-content: center;
+    align-items:center;
+    padding:20px;
+}
+.desc1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align:center;
+} 
+.sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5ebe0; /* Beige background color */
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+}
+
+/* Left Section (Main Image) */
+.main-image {
+    flex: 2; /* Takes 2/3 of the container width */
+    overflow: hidden;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right Section */
+.right-section {
+    flex: 1; /* Takes 1/3 of the container width */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between the two right images */
+    padding-left: 20px; /* Space between left and right sections */
+}
+
+.right-section img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Top Right Image */
+.top-right {
+    flex: 1;
+}
+
+/* Bottom Right Image */
+.bottom-right {
+    flex: 1;
+}
