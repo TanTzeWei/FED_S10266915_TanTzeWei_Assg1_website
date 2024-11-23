@@ -88,3 +88,13 @@ select{
     color:black;
     text-align: right;
 }
+.hero2 {
+    position:relative;
+    height: 70vh;
+    background: url('images/classicsneaker.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

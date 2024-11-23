@@ -58,12 +58,18 @@ nav a:hover{
 .dropdown:hover .dropdown-menu{     /*This is to make sure that parent and child relationship is visible*/
     display:block;
 }
-.footer{
+footer{
     background-color: black;
     color:white;
     text-align:center;
     padding:20px;
     font-family: Arial, Helvetica, sans-serif;
+}
+.footer{
+    margin-bottom: 10px;;
+}
+.footer-icon{
+    margin-top:10px;
 }
 .footer-icon img{
        width:30px;
