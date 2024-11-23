@@ -1,0 +1,53 @@
+.hero {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire section */
+    z-index: -1; /* Pushes the video behind the content */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    color: white;
+    text-align: center;
+}
+.jacketandchino{
+    display:flex;
+    justify-content: space-between;
+    gap:20px;
+}
+.jacket,.chino{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+.jacket img,.chino img{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin:0;
+}
+.button{
+    position:relative;
+    top:10px;
+    text-align:center;
+    background-color: black;
+    color:white;
+    border:10px solid black;
+    text-decoration: none;
+}
