@@ -42,10 +42,12 @@ nav a:hover{
     background-color: white;
     padding:10px;
     display:none;
-    border-radius:4px;  
+    border-radius:4px;
+    z-index:10; 
 }
 .dropdown-menu li{
     padding:15px;
+    display:block;
 }
 .dropdown-menu a{
     color:black;
@@ -55,7 +57,7 @@ nav a:hover{
 .dropdown-menu a:hover{
     color:#e60000;
 }
-.dropdown:hover .dropdown-menu{     /*This is to make sure that parent and child relationship is visible*/
+.dropdown:hover .dropdown-menu, .dropdown-menu:hover{     /*This is to make sure that parent and child relationship is visible*/
     display:block;
 }
 footer{
