@@ -20,8 +20,8 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    margin: 25;
-    padding: 25;
+    margin: 25px;
+    padding: 25px;
 }
 nav a{
     text-decoration:none;
@@ -76,4 +76,27 @@ footer{
        height:auto;
        margin:10px 0;
        justify-content: center;
+}
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+        text-align:center;
+    }
+    nav ul{
+        flex-direction:column;
+        gap:10px;
+        margin:0;
+        padding:0;
+    }
+    .footer-icon img {
+        width: 40px;
+    }
+}
+@media(max-width:480px){
+    .footer {
+        font-size: 14px;
+    }
+    .footer-icon img {
+        width: 30px;
+    }
 }
