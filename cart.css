@@ -37,6 +37,7 @@
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 @media(max-width:768px){
     #cart-container{

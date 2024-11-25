@@ -24,7 +24,7 @@
                 </li>
                 <li><a href="Women.html">Women</a></li>
                 <li><a href="Gift-card.html">Gift Card</a></li>
-                <li><a href="Sign-In.html">Sign In</a></li>
+                <li><a href="#" id="open-modal">Sign In</a></li>
                 <li>
                     <a href="cart.html">
                         <i class="fas fa-shopping-cart"></i>
@@ -123,5 +123,18 @@
             </a>
         </div>
     </footer>
+    <!-- Sign-in Modal -->
+<div class="modal" id="sign-in-modal">
+    <div class="modal-content">
+        <span class="close" id="close-modal">&times;</span>
+        <h1>Welcome to ARTISAN LAB</h1>
+        <form id="login-form">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
