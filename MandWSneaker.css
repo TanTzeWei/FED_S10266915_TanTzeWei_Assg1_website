@@ -34,6 +34,12 @@
        justify-content: center;
        align-items: center;
 }
+.product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: darkred; 
+    margin-top: 10px; 
+}
 label{
     display:block;
     font-weight:bold;
