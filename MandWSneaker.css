@@ -1,6 +1,6 @@
 .hero {
     position:relative;
-    height: 70vh;
+    height:100vh;
     background: url('images/EssenSneaimg.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
@@ -88,10 +88,50 @@ select{
     color:black;
     text-align: right;
 }
-.hero2 {
+.hero-Men-Classic-Sneaker {
     position:relative;
-    height: 70vh;
+    height: 100vh;
     background: url('images/classicsneaker.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-Men-Minimal-Sneaker{
+    position:relative;
+    height: 100vh;
+    background: url('images/Men-Minimal-Sneaker-hero.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-Men-High-Top-Essential-Sneaker{
+    position:relative;
+    height: 100vh;
+    background: url('images/Men-High-Top-Essential-Sneaker-hero.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-Women-Classic-Sneaker{
+    position:relative;
+    height: 100vh;
+    background: url('images/Women-Classic-Sneaker.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-Women-Essential-Sneaker{
+    position:relative;
+    height: 100vh;
+    background: url('images/Women-essential-Sneaker-hero.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
