@@ -38,28 +38,34 @@ nav a:hover{
 .dropdown-menu{
     list-style: none;
     position:absolute;
-    top:100%;
+    top:0;
     left:0;
     background-color: white;
     padding:10px;
     display:none;
     border-radius:4px;
-    z-index:10; 
+    z-index:10;
+    padding:0;
 }
 .dropdown-menu li{
     padding:15px;
-    display:block;
 }
 .dropdown-menu a{
     color:black;
     text-decoration: none;
     display:block;
 }
+.dropdown:hover .dropdown-menu {
+    display: block; 
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+    display: block;
+}
+
 .dropdown-menu a:hover{
     color:#e60000;
-}
-.dropdown:hover .dropdown-menu, .dropdown-menu:hover{     /*This is to make sure that parent and child relationship is visible*/
-    display:block;
 }
 footer{
     background-color: black;
