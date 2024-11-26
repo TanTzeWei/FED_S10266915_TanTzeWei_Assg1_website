@@ -1,3 +1,7 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.6;
+}
 header{
     display:flex;
     align-items: center;
@@ -38,7 +42,7 @@ nav a:hover{
 .dropdown-menu{
     list-style: none;
     position:absolute;
-    top:0;
+    top:-4px;
     left:0;
     background-color: white;
     padding:10px;
@@ -58,12 +62,6 @@ nav a:hover{
 .dropdown:hover .dropdown-menu {
     display: block; 
 }
-
-.dropdown:hover .dropdown-menu,
-.dropdown-menu:hover {
-    display: block;
-}
-
 .dropdown-menu a:hover{
     color:#e60000;
 }
