@@ -2,6 +2,7 @@
 const modal = document.getElementById("sign-in-modal");
 const openModalBtn = document.getElementById("open-modal");
 const closeModalBtn = document.getElementById("close-modal");
+const promoClickBtn = document.getElementById("promo-click");
 
 
 openModalBtn.addEventListener("click", () => {
@@ -19,6 +20,12 @@ window.addEventListener("click", (e) => {
         modal.style.display = "none";
     }
 });
+promoClickBtn.addEventListener("click", () => {
+    alert("Your promo code is: NEWCUSTOMERPROMO! Apply this at checkout to use.");
+});
+
+
+
 
 
 
