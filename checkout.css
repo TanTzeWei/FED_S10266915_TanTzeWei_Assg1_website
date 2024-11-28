@@ -15,6 +15,9 @@ header{
     margin:0;
     font-size:24px;
 }
+.cart-items-container{
+    display:flex;
+}
 .checkout-container{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr ;

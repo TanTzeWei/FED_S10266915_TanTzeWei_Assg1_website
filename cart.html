@@ -45,5 +45,14 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        document.getElementById("checkout-button").addEventListener("click", () => {
+            // Save the cart data to local storage
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            localStorage.setItem('checkoutCart', JSON.stringify(cart));
+            window.location.href = "checkout.html";
+        });
+    </script>
+</script>
 </body>
 </html>

@@ -1,25 +1,3 @@
-const modal = document.getElementById("sign-in-modal");
-const openModalBtn = document.getElementById("open-modal");
-const closeModalBtn = document.getElementById("close-modal");
-
-// Open modal when clicking "Sign In"
-openModalBtn.addEventListener("click", (e) => {
-    e.preventDefault(); // Prevent link default behavior
-    modal.style.display = "flex"; // Show the modal
-});
-
-// Close modal when clicking the "×" button
-closeModalBtn.addEventListener("click", () => {
-    modal.style.display = "none";
-});
-
-// Close modal when clicking outside the modal content
-window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-        modal.style.display = "none";
-    }
-});
-
 document.addEventListener("DOMContentLoaded", () => {
     const promoClickBtn = document.getElementById("promo-click");
     const modal = document.getElementById("sign-in-modal");
@@ -163,4 +141,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-

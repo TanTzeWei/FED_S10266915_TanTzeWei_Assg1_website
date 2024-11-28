@@ -22,6 +22,11 @@
             <p id="shipping">Shipping:$10</p>
             <p><strong id="total"></strong></p>
         </div>
+        <div class="promo-code">
+            <label for="promo-code-input">Promo Code</label>
+            <input type="text" id="promo-code-input" name="promo-code">
+            <button id="apply-promo-code">Apply</button>
+            <p id="promo-message"></p>
        </section>
        <section class="shipping-info">
         <h2>Shipping Information</h2>
@@ -70,5 +75,60 @@
           </form>
        </section>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const checkoutItemsContainer = document.getElementById("cart-items-container");
+            const checkoutTotalElement = document.getElementById("total");
+            const subtotalElement = document.getElementById("subtotal");
+            const promoCodeInput = document.getElementById("promo-code-input");
+            const applyPromoCodeButton=document.getElementById("apply-promo-code");
+            const promoMessage=document.getElementById("promo-message");
+            
+            let cart = JSON.parse(localStorage.getItem('checkoutCart')) || [];
+            checkoutItemsContainer.innerHTML = "";
+            let total = 0;
+            
+            cart.forEach(item => {
+                console.log(item);
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                const checkoutItem = document.createElement("div");
+                checkoutItem.className = "checkout-item";
+                checkoutItem.innerHTML = `
+                    <div class="checkout-item-details">
+                        <img src="${item.image}" alt="${item.name}" class="checkout-item-image">
+                        <span>${item.name} (Size: ${item.size})</span>
+                        <span>$${item.price.toFixed(2)}</span>
+                        <span>Quantity: ${item.quantity}</span>
+                    </div>
+                `;
+                checkoutItemsContainer.appendChild(checkoutItem);
+            });
+            const shippingCost=10.00;
+            subtotalElement.innerHTML = `Subtotal: $${total.toFixed(2)}`;
+            total += shippingCost;
+            checkoutTotalElement.innerHTML = `Total: $${total.toFixed(2)}`
+            const promoCode = localStorage.getItem('promoCode');
+            if (promoCode) {
+                promoCodeInput.value = promoCode;
+                applyPromoCodeButton.click();
+            }
+
+            applyPromoCodeButton.addEventListener("click", () => {
+                const promoCode = promoCodeInput.value.trim();
+                if (promoCode === "NEWUSERPROMO") {
+                    const discount = total * 0.10;
+                    total -= discount;
+                    promoMessage.innerHTML = `Promo code applied. You saved $${discount.toFixed(2)}!`;
+                    checkoutTotalElement.innerHTML = `Total: $${total.toFixed(2)}`;
+                } else {
+                    promoMessage.innerHTML = "Invalid promo code.";
+                }
+            });
+        });
+            //if (!checkoutItemsContainer || !checkoutTotalElement) return;
+            //checkoutTotalElement.textContent = `Total:$${total.toFixed(2)}`;
+        //});
+    </script>
 </body>
 </html>
