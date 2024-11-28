@@ -213,6 +213,10 @@ footer{
     .modal-content{
         width:95%;
     }
+    .footer-content{
+        flex-direction:column;
+        text-align: center;
+    }
 }
 @media(max-width:480px){
     .footer {

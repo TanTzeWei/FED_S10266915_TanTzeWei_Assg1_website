@@ -36,8 +36,6 @@
     justify-content: center;
     margin:20px;
     padding:20px;
-    font-size: large;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #EM-sneaker2{
     display:flex;
@@ -119,6 +117,11 @@
 .hero-heading{
     color:white;
     font-size: 3em;
+    font-family:"Montserrat", sans-serif;
+}
+.hero-subtext {
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.5em;
 }
 .hero-heading, .hero-subtext, #promo-click{
     z-index: 2;
@@ -151,6 +154,10 @@
     font-family:"Montserrat", sans-serif;
     font-size:3em;
 }
+.EM-sneaker2{
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.5em;
+}
 @media(max-width:768px){
     #class-section, .background-section, #promo-click, #overlap, .desc1, #EM-sneaker, #EM-sneaker2, .button, .btn, .lab-items, #lab-heading, #lab-para, #lab-heading, #desc-heading, .info, .sneaker-lab img, .tailor-lab img, .hero, .hero-heading, .hero2{
         flex-direction: column;
@@ -164,6 +171,18 @@
         flex-direction: column;
         gap:10px;
     }
+    .hero-heading{
+        font-size:2.5em;
+    }
+    .hero-subtext{
+        font-size:1.2em;
+    }
+    .EM-sneaker{
+        font-size:2.5em;
+    }
+    .EM-sneaker2{
+        font-size:1.2em;
+    }
 }
 @media(max-width:480px){
     .btn{
@@ -172,6 +191,18 @@
     }
     .lab-items{
         margin:10px; 
+    }
+    .hero-heading{
+        font-size:2em;
+    }
+    .hero-subtext{
+        font-size:1em;
+    }
+    .EM-sneaker{
+        font-size:2em;
+    }
+    .EM-sneaker2{
+        font-size:1em;
     }
 }
 

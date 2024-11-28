@@ -141,15 +141,39 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
     const colorFilter = document.getElementById("color-filter");
-    colorFilter.addEventListener("change", () => {
-        const selectedColor = colorFilter.value;
-        document.querySelectorAll(".product").forEach(product => {
-            if (selectedColor === "all" || product.dataset.color === selectedColor) {
-                product.style.display = "flex";
-                product.style.flexDirection="column"
-            } else {
-                product.style.display = "none";
-            }
+    if (colorFilter) {
+        colorFilter.addEventListener("change", () => {
+            const selectedColor = colorFilter.value;
+            document.querySelectorAll(".product").forEach(product => {
+                if (selectedColor === "all" || product.dataset.color === selectedColor) {
+                    product.style.display = "flex";
+                    product.style.flexDirection = "column";
+                } else {
+                    product.style.display = "none";
+                }
+            });
         });
-    });
+    }
+
+    // Add gift card to cart
+    const addGiftCardBtn = document.getElementById("add-gift-card");
+    if (addGiftCardBtn) {
+        addGiftCardBtn.addEventListener("click", () => {
+            const productId = "gift-card";
+            const productName = "Gift Card";
+            const giftCardValueElement = document.getElementById("gift-card-value");
+            const productPrice = parseFloat(giftCardValueElement.value);
+            if (isNaN(productPrice) || productPrice <= 0) {
+                alert('Please select a valid gift card value.');
+                return;
+            }
+            const productImage = "images/gift-card.jpg"; // Update with the correct image path
+            const productSize = ""; // No size for gift card
+
+            console.log(`Button clicked: ${productName} (ID: ${productId}, Price: ${productPrice})`);
+            addToCart(productId, productName, productPrice, productImage, productSize);
+        });
+    }
 });
+
+
