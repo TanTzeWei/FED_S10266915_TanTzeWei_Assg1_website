@@ -140,4 +140,16 @@ document.addEventListener("DOMContentLoaded", () => {
             addToCart(productId, productName, productPrice, productImage, productSize);
         });
     });
+    const colorFilter = document.getElementById("color-filter");
+    colorFilter.addEventListener("change", () => {
+        const selectedColor = colorFilter.value;
+        document.querySelectorAll(".product").forEach(product => {
+            if (selectedColor === "all" || product.dataset.color === selectedColor) {
+                product.style.display = "flex";
+                product.style.flexDirection="column"
+            } else {
+                product.style.display = "none";
+            }
+        });
+    });
 });

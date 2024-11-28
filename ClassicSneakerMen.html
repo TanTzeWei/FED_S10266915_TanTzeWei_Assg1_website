@@ -41,8 +41,18 @@
     <br>
     <h2 id="shoe-header">Fall-Winter Collection</h2>
     <hr>
+    <div class="filter-container">
+        <label for="color-filter">Filter by Color:</label>
+        <select id="color-filter">
+            <option value="all">All</option>
+            <option value="Black Vintage">Black Vintage</option>
+            <option value="Cream">Cream</option>
+            <option value="Off-White Court">Off-White Court</option>
+            <option value="Retro White-Red">Retro White-Red</option>
+        </select>
+    </div>
     <section class="products-container">
-        <section class="product">
+        <section class="product" data-color="Black Vintage">
             <div class="product-image">
                 <h3>Classic Sneakers - Black Vintage</h3>
                 <img src="images/CSBLACKVINTAGE-MEN.jpg" alt="Classic Sneakers- Black Vintage">
@@ -51,7 +61,7 @@
             <div class="product-details">
                 <label for="size-black-vintage">Size:</label>
                 <select id="size-black-vintage" name="size">
-                    <option value="" disabled selected>Select Size</option>
+                    <option value="" selected>Select Size</option>
                     <option value="6">US6</option>
                     <option value="7">US7</option>
                     <option value="8">US8</option>
@@ -63,7 +73,7 @@
                 <button class="btn-add-to-cart" data-id="1" data-name="Classic Sneakers - Black Vintage" data-price="190" data-image="images/CSBLACKVINTAGE-MEN.jpg">Add to Cart</button>
             </div>
         </section>
-        <section class="product">
+        <section class="product" data-color="Cream">
             <div class="product-image">
                 <h3>Classic Sneakers - Cream</h3>
                 <img src="images/CSCREAM-MEN.jpg" alt="Classic Sneakers- Cream">
@@ -72,7 +82,7 @@
             <div class="product-details">
                 <label for="size-cream">Size:</label>
                 <select id="size-cream" name="size">
-                    <option value="" disabled selected>Select Size</option>
+                    <option value="" selected>Select Size</option>
                     <option value="6">US6</option>
                     <option value="7">US7</option>
                     <option value="8">US8</option>
@@ -84,7 +94,7 @@
                 <button class="btn-add-to-cart" data-id="2" data-name="Classic Sneakers - Cream" data-price="190" data-image="images/CSCREAM-MEN.jpg">Add to Cart</button>
             </div>
         </section>
-        <section class="product">
+        <section class="product" data-color="Off-White Court">
             <div class="product-image">
                 <h3>Classic Sneakers - Off-White Court</h3>
                 <img src="images/CSOFFWHITECOURT-MEN.jpg" alt="Classic Sneakers- Off-White Court">
@@ -93,7 +103,7 @@
             <div class="product-details">
                 <label for="size-off-white-court">Size:</label>
                 <select id="size-off-white-court" name="size">
-                    <option value="" disabled selected>Select Size</option>
+                    <option value="" selected>Select Size</option>
                     <option value="6">US6</option>
                     <option value="7">US7</option>
                     <option value="8">US8</option>
@@ -105,7 +115,7 @@
                 <button class="btn-add-to-cart" data-id="3" data-name="Classic Sneakers - Off-White Court" data-price="190" data-image="images/CSOFFWHITECOURT-MEN.jpg">Add to Cart</button>
             </div>
         </section>
-        <section class="product">
+        <section class="product" data-color="Retro White-Red">
             <div class="product-image">
                 <h3>Classic Sneakers - Retro White-Red</h3>
                 <img src="images/CSRETROWHITERED-MEN.jpg" alt="Classic Sneakers- Retro White-Red">
@@ -114,7 +124,7 @@
             <div class="product-details">
                 <label for="size-retro-white-red">Size:</label>
                 <select id="size-retro-white-red" name="size">
-                    <option value="" disabled selected>Select Size</option>
+                    <option value="" selected>Select Size</option>
                     <option value="6">US6</option>
                     <option value="7">US7</option>
                     <option value="8">US8</option>
