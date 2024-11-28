@@ -7,6 +7,16 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    color:white;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 .hero-heading{
     color:white;
@@ -42,6 +52,9 @@
 .essential p, .classic p{
     display:flex;
     justify-content: center;
+    font-size:1.5em;
+    font-family:'Montserrat', sans-serif;
+
 }
 .MandHTES{
     display:flex;
@@ -64,6 +77,8 @@
 .Minimal p, .HTES p{
     display:flex;
     justify-content: center;
+    font-size:1.5em;
+    font-family: "Montserrat", sans-serif;
 }
 .footer{
     background-color: black;
