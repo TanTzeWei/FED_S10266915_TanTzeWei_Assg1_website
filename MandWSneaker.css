@@ -239,6 +239,36 @@ select {
     background-color: rgba(68, 68, 68, 0.5); /* Semi-transparent overlay */
     z-index: 1;
 }
+.hero-bomber-jacket{
+    position:relative;
+    height: 100vh;
+    background: url('images/hero-bomber-jacket.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-standard-chinos{
+    position:relative;
+    height: 100vh;
+    background: url('images/hero-standard-chinos.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-standard-chinos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 68, 68, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
+}
 @media(max-width:768px){
     .products-container{
         grid-template-columns: 1fr;
