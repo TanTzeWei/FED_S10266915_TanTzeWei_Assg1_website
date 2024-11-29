@@ -145,3 +145,20 @@ input, select{
         text-align: left;
     }
 }
+@media (max-width: 480px) {
+    .checkout-header {
+        font-size: 20px;
+    }
+    .checkout-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .promo-code input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .promo-code button {
+        width: 100%;
+        padding: 10px;
+    }
+}

@@ -8,6 +8,16 @@
     align-items: center;
     text-align: center;
 }
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 68, 68, 0.3); /* Semi-transparent overlay */
+    z-index: 1;
+}
 .sub-text{
     color:white;
     font-size: 3em;
@@ -18,9 +28,17 @@
     font-size: 2em;
     margin-bottom: -30px;
 }
+.hero-heading, .sub-text{
+    z-index: 2;
+}
 #shoe-header{
     display:flex;
     justify-content: center;
+}
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px 0;
 }
 .products-container {
     display: grid;
@@ -96,7 +114,7 @@ select {
 .reviews-section{
     background-color: #f9f9f9;
     padding:40px;
-    text-align:center
+    text-align:center;
 }
 .review-container{
     display:flex;
@@ -131,6 +149,16 @@ select {
     align-items: center;
     text-align: center;
 }
+.hero-Men-Classic-Sneaker::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 68, 68, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
+}
 .hero-Men-Minimal-Sneaker{
     position:relative;
     height: 100vh;
@@ -141,6 +169,16 @@ select {
     align-items: center;
     text-align: center;
 }
+.hero-Men-Minimal-Sneaker::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 68, 68, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
+}
 .hero-Men-High-Top-Essential-Sneaker{
     position:relative;
     height: 100vh;
@@ -150,6 +188,16 @@ select {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+.hero-Men-High-Top-Essential-Sneaker::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(68, 68, 68, 0.5); /* Semi-transparent overlay */
+    z-index: 1;
 }
 .hero-Women-Classic-Sneaker{
     position:relative;
@@ -170,4 +218,38 @@ select {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+@media(max-width:768px){
+    .products-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .product{
+        padding:20px;
+    }
+    .review-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .review{
+        max-width: 100%;
+    }
+}
+@media(max-width:480px){
+    .sub-text{
+        font-size: 2em;
+    }
+    .hero-heading{
+        font-size: 1.5em;
+    }
+    .product h3{
+        font-size: 16px;
+    }
+    .btn-add-to-cart{
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .review{
+        padding: 10px;
+    }
 }

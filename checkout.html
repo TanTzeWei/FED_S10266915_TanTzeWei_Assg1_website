@@ -116,20 +116,24 @@
 
             applyPromoCodeButton.addEventListener("click", () => {
                 const promoCode = promoCodeInput.value.trim();
-                if (promoCode === "NEWUSERPROMO" && subtotal>0) {
+                if (promoCode === "NEWUSERPROMO" && total>10 ) {
                     const discount = total * 0.10;
-                    subtotal-=discount;
+                    total-=discount;
                     promoMessage.innerHTML = `Promo code applied. You saved $${discount.toFixed(2)}!`;
-                    total = subtotal+shippingCost
                     checkoutTotalElement.innerHTML = `Total: $${total.toFixed(2)}`;
-                    localStorage.removeItem('promoCode');
                     applyPromoCodeButton.disabled=true;
                     promoCodeInput.disabled=true;
                 } else {
                     promoMessage.innerHTML = "Invalid promo code.";
                 }
             });
+            if (localStorage.getItem('promoCodeApplied') === 'true') {
+                promoCodeInput.disabled = true;
+                applyPromoCodeButton.disabled = true;
+                promoMessage.innerHTML = "Promo code already applied.";
+            }
         });
+        
     </script>
 </body>
 </html>

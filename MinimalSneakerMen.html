@@ -41,8 +41,16 @@
 <br>
 <h2 id="shoe-header">Fall-Winter Collection</h2>
 <hr>
+<div class="filter-container">
+    <label for="color-filter">Filter by Color:</label>
+    <select id="color-filter">
+        <option value="all">All</option>
+        <option value="White">White</option>
+        <option value="Black">Black</option>
+    </select>
+</div>
 <section class="products-container">
-    <section class="product">
+    <section class="product" data-color="White">
         <div class="product-image">
             <h3>Minimal Sneakers - White</h3>
             <img src="images/MSWHITE-MEN.jpg" alt="Minimal Sneakers- White">
@@ -51,7 +59,7 @@
         <div class="product-details">
             <label for="size-white">Size:</label>
             <select id="size-white" name="size">
-                <option value="" disabled selected>Select Size</option>
+                <option value="" selected>Select Size</option>
                 <option value="6">US6</option>
                 <option value="7">US7</option>
                 <option value="8">US8</option>
@@ -63,7 +71,7 @@
             <button class="btn-add-to-cart" data-id="1" data-name="Minimal Sneakers - White" data-price="230" data-image="images/MSWHITE-MEN.jpg">Add to Cart</button>
         </div>
     </section>
-<section class="product">
+<section class="product" data-color="Black">
     <div class="product-image">
     <h3>Minimal Sneakers - Black</h3>
     <img src="images/MSBLACK-MEN.jpg" alt="Minimal Sneakers- Black">
@@ -72,7 +80,7 @@
     <div class="product-details">
     <label for="size-white">Size:</label>
     <select id="size-white" name="size">
-        <option value="" disabled selected>Select Size</option>
+        <option value="" selected>Select Size</option>
         <option value="6">US6</option>
         <option value="7">US7</option>
         <option value="8">US8</option>
@@ -84,32 +92,41 @@
     <button class="btn-add-to-cart" data-id="2" data-name="Minimal Sneakers - Black" data-price="230" data-image="images/MSBLACK-MEN.jpg">Add to Cart</button>
     </div>
 </section>
+</section>
 <section class="reviews-section">
     <h2>Customer Reviews</h2>
     <div class="review-container">
     <div class="review">
-        <p class="review-text">"The Essential Sneakers - Premium White are incredibly comfortable and stylish. Perfect for casual outings!"</p>
-        <p class="review-author">- John Doe</p>
+        <p class="review-text">"The Minimal Sneakers - Black are incredibly comfortable and stylish. Perfect for casual outings!"</p>
+        <p class="review-author">- John Tan</p>
     </div>
     <div class="review">
-        <p class="review-text">"I love the Navy/White sneakers! The fit is great, and they go well with almost any outfit."</p>
+        <p class="review-text">"I love the Minimal Sneakers! The fit is great, and they go well with almost any outfit."</p>
+        <p class="review-author">- Charlotte Lee</p>
+    </div>
+    <div class="review">
+        <p class="review-text">"Amazing quality for the price. The Minimal Sneakers have become my daily go-to shoes."</p>
         <p class="review-author">- Jane Smith</p>
-    </div>
-    <div class="review">
-        <p class="review-text">"Amazing quality for the price. The Premium White Court sneakers have become my daily go-to shoes."</p>
-        <p class="review-author">- Alex Brown</p>
     </div>
 </div>
 </section>
-</section>
 <footer>
-    <div class="footer">
-        <p>Follow Us on Instagram</p>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>Artisan Lab is dedicated to providing high-quality, handcrafted products made by skilled artisans. Our mission is to bring you the best in craftsmanship and design.</p>
+        </div>
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/artisanlab_man" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/artisanlab" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/artisanlab" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </div>
-    <div class="footer-icon">
-        <a href="https://www.instagram.com/artisanlab_man" target="_blank">
-            <img src="images/Instagram icon.jpg" alt="Instagram Icon">
-        </a>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Artisan Lab. All rights reserved.</p>
     </div>
 </footer>
 <div class="modal" id="sign-in-modal">
