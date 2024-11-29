@@ -125,8 +125,14 @@
     border-radius: 8px; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
 }
-
-/* Responsive Design for Smaller Screens */
+.hero,
+.background-section {
+    margin: 0;
+    padding: 0;
+}
+.background-section {
+    width: 100%;
+}
 @media (max-width: 768px) {
     .hero-heading{
         font-size: 2.5em;
@@ -138,11 +144,11 @@
         height:60vh;
     }
     .image {
-        width: 80%; /* Images shrink to fit smaller screens */
+        width: 80%; 
     }
 
     .layout-row {
-        flex-direction: column; /* Stacks images vertically on small screens */
+        flex-direction: column; 
     }
 }
 @media(max-width:480px){

@@ -46,3 +46,36 @@ select{
 .btn-purchase:hover {
     background-color: #333;
 }
+@media(max-width:768px){
+    .gift-card-section{
+        flex-direction:column;
+        text-align:center;
+    }
+    .gift-card-details h2{
+        font-size:28px;
+    }
+    .price{
+        font-size:18px;
+    }
+    .description{
+        font-size:14px;
+    }
+    select{
+        max-width:100%;
+    }
+}
+@media(max-width:480px){
+    .gift-card-details h2{
+        font-size:24px;
+    }
+    .price{
+        font-size:16px;
+    }
+    .description{
+        font-size:12px;
+    }
+    #add-gift-card {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+}

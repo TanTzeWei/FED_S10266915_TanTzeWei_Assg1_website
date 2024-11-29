@@ -39,8 +39,18 @@
     <h3 class="sub-text">Women's Essential Sneaker</h3>
 </section>
 <br>
+<div class="filter-container">
+    <label for="color-filter">Filter by Color:</label>
+    <select id="color-filter">
+        <option value="all">All</option>
+        <option value="Cream">Cream</option>
+        <option value="Nude">Nude</option>
+        <option value="White Vintage">White Vintage</option>
+        <option value="Indigo">Indigo</option>
+    </select>
+</div>
 <section class="products-container">
-    <section class="product">
+    <section class="product" data-color="Cream">
         <div class="product-image">
             <h3>Women's Essential Sneakers - Cream</h3>
             <img src="images/WECREAM-WOMEN.jpg" alt="Women's Essential Sneakers- Cream">
@@ -61,7 +71,7 @@
             <button class="btn-add-to-cart" data-id="1" data-name="Women's Essential Sneakers - Cream" data-price="200" data-image="images/WECREAM-WOMEN.jpg">Add to Cart</button>
         </div>
     </section>
-<section class="product">
+<section class="product" data-color="Nude">
     <div class="product-image">
     <h3>Women's Essential Sneakers - Nude</h3>
     <img src="images/WCNUDE-WOMEN.jpg" alt="Women's Essential Sneakers- Nude">
@@ -82,7 +92,7 @@
     <button class="btn-add-to-cart" data-id="2" data-name="Women's Essential Sneakers - Nude" data-price="200" data-image="images/WENUDE-WOMEN.jpg">Add to Cart</button>
     </div>
 </section>
-<section class="product">
+<section class="product" data-color="White Vintage">
     <div class="product-image">
     <h3>Women's Essential Sneakers - White Vintage</h3>
     <img src="images/WEWHITEVINTAGE-WOMEN.jpg" alt="Women's Essential Sneakers- White Vintage">
@@ -103,7 +113,7 @@
     <button class="btn-add-to-cart" data-id="3" data-name="Women's Essential Sneakers - White Vintage" data-price="200" data-image="images/WEWHITEVINTAGE-WOMEN.jpg">Add to Cart</button>
     </div>
 </section>
-<section class="product">
+<section class="product" data-color="Indigo">
     <div class="product-image">
     <h3>Women's Essential Sneakers - Indigo</h3>
     <img src="images/WEINDIGO-WOMEN.jpg" alt="Women's Essential Sneakers- Indigo">
@@ -129,27 +139,36 @@
     <h2>Customer Reviews</h2>
     <div class="review-container">
     <div class="review">
-        <p class="review-text">"The Essential Sneakers - Premium White are incredibly comfortable and stylish. Perfect for casual outings!"</p>
-        <p class="review-author">- John Doe</p>
+        <p class="review-text">"The Women's Essential Sneakers - White Vintage are incredibly comfortable and stylish. Perfect for casual outings!"</p>
+        <p class="review-author">- Jessica Lee</p>
     </div>
     <div class="review">
-        <p class="review-text">"I love the Navy/White sneakers! The fit is great, and they go well with almost any outfit."</p>
-        <p class="review-author">- Jane Smith</p>
+        <p class="review-text">"I love the Indigo sneakers! The fit is great, and they go well with almost any outfit."</p>
+        <p class="review-author">- Amanda Smith</p>
     </div>
     <div class="review">
-        <p class="review-text">"Amazing quality for the price. The Premium White Court sneakers have become my daily go-to shoes."</p>
-        <p class="review-author">- Alex Brown</p>
+        <p class="review-text">"Amazing quality for the price. The Essential Sneakers have become my daily go-to shoes."</p>
+        <p class="review-author">- Rachel Johnson</p>
     </div>
 </div>
 </section>
 <footer>
-    <div class="footer">
-        <p>Follow Us on Instagram</p>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>Artisan Lab is dedicated to providing high-quality, handcrafted products made by skilled artisans. Our mission is to bring you the best in craftsmanship and design.</p>
+        </div>
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/artisanlab_man" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/artisanlab" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/artisanlab" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
     </div>
-    <div class="footer-icon">
-        <a href="https://www.instagram.com/artisanlab_man" target="_blank">
-            <img src="images/Instagram icon.jpg" alt="Instagram Icon">
-        </a>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Artisan Lab. All rights reserved.</p>
     </div>
 </footer>
 <div class="modal" id="sign-in-modal">
