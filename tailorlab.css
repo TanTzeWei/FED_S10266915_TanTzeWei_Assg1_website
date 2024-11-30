@@ -1,46 +1,3 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Header Styles */
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px; /* Padding around the content */
-    position: absolute; /* Make the header overlay the hero */
-    top: 0;
-    left: 0;
-    width: 100%; /* Full width of the viewport */
-    z-index: 10; /* Ensure it's on top of the background */
-    background: transparent; /* Ensure the header is transparent */
-}
-
-.header-link {
-    color: white; /* White for better contrast */
-    text-decoration: none;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white; /* White text for navigation */
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #e60000; /* Highlight color */
-}
-
-/* Hero Section */
 .hero {
     position: relative;
     height: 100vh; /* Full viewport height */
@@ -50,32 +7,73 @@ nav a:hover {
     justify-content: center;
     align-items: center;
 }
-
+.hero-heading {
+    font-size: 3em; /* Increase font size */
+    color: white;
+    text-align: center;
+    z-index: 2;
+}
 .background-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the video/image covers the entire hero section */
-    z-index: -1; /* Push the background behind the content */
+    object-fit: cover;
+    z-index: 1;
 }
-
 .hero-content {
     position: relative;
-    z-index: 2; /* Ensure content is above the video */
-    color: white;
-    text-align: center;
+    z-index: 2;
 }
-
-/* Adjust for Mobile Screens */
+.jacketandchino {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.jacket,.chino{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+.jacket img,.chino img{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    margin:0;
+}
+.jacket h3,.chino h3{
+    font-size:1.5em;
+    font-family:'Montserrat', sans-serif;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.button:hover {
+    background-color: #555;
+}
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
+    .hero-heading {
+        font-size: 2.5em; /* Adjust font size for smaller screens */
     }
-    nav ul {
+    .jacketandchino {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
+    }
+    .jacket, .chino {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .hero-heading {
+        font-size: 2em; /* Adjust font size for smaller screens */
     }
 }

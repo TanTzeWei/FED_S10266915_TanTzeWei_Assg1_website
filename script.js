@@ -174,6 +174,26 @@ document.addEventListener("DOMContentLoaded", () => {
             addToCart(productId, productName, productPrice, productImage, productSize);
         });
     }
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    const dropdowns = document.querySelectorAll('.dropdown');
+
+    // Toggle the mobile menu
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile');
+        navLinks.classList.toggle('show');
+    });
+
+    // Toggle dropdown menus for mobile
+    dropdowns.forEach((dropdown) => {
+        const link = dropdown.querySelector('a');
+        link.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent navigation
+            dropdown.classList.toggle('open');
+            const submenu = dropdown.querySelector('.dropdown-menu');
+            submenu.classList.toggle('show');
+        });
+    });
 });
 
 
