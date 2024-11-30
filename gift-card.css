@@ -43,7 +43,7 @@ select{
     border-radius: 4px;
 }
 
-.btn-purchase:hover {
+#add-gift-card:hover {
     background-color: #333;
 }
 @media(max-width:768px){

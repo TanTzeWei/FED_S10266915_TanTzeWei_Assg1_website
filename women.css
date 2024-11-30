@@ -40,7 +40,7 @@
     cursor: pointer
 }
 #btn:hover {
-    background-color: #b30000;
+    background-color: #555;
 }
 .background-section{
     position:relative;
@@ -98,7 +98,7 @@
 .hero2-btn{
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #e60000;
+    background-color: #555;
     color: white;
     border: none;
     text-decoration: none;

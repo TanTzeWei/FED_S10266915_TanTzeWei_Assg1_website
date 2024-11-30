@@ -78,6 +78,9 @@
     cursor: pointer;
     text-decoration: none;
 }
+#checkout-button:hover {
+    background-color: #6a6a6a;
+}   
 @media(max-width:768px){
     #cart-container{
         padding:15px;

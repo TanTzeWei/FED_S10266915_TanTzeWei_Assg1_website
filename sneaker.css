@@ -48,6 +48,12 @@
     color:white;
     border:10px solid black;
     text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
 }
 .essential p, .classic p{
     display:flex;
