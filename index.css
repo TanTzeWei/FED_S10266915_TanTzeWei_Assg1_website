@@ -204,5 +204,26 @@
         font-size:1em;
     }
 }
+@media (orientation: landscape) and (max-width: 768px) {
+    .hero-heading {
+        font-size: 2em;
+    }
+    .hero-subtext {
+        font-size: 1em;
+    }
+    .EM-sneaker {
+        font-size: 2em;
+    }
+    .EM-sneaker2 {
+        font-size: 1em;
+    }
+    .btn {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .lab-items {
+        margin: 10px;
+    }
+}
 
 
