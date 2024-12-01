@@ -25,5 +25,84 @@ Exisitng Features:
 - Lottie Animations: Integration of lottie animation to enhance the user experience on both mobile and desktop. When the user click on the place order, the animation will load and after a short while it will inform that the payment is successful. Once the user confirms it, it bring the user back to the homepage.
 - Responsive Design: Responsive Design ensures that the website looks and work great on different devices no matter the screen size and width. This will help to allow the user to have a smooth and seamless experience on all devices
 - Accessibility: By having the website be screen reader friendly, we can ensure that people who are in need of the screen reader will still be able to navigate through the website effieciently and properly as we have included accessibility in our website.
-- 
 
+### Technologies Used
+
+### Languages
+-HTML(https://developer.mozilla.org/en-US/docs/Web/HTML) (Used for structuring the website)
+-CSS (https://developer.mozilla.org/en-US/docs/Web/CSS) (Used for styling a website and ensuring a responsive design)
+-Javascript (https://developer.mozilla.org/en-US/docs/Web/JavaScript) (Used for adding interactivity and dynamic content to the website)
+ ### FrameWorks and Libraries
+ -Lottie (https://airbnb.io/lottie/#/) (used for integrating animation to enhance the user experience)
+ -FontAwesome (https://fontawesome.com/) (Used for adding scalable vector icons to the website improving the visual appeal and interface)
+ -Google Fonts (https://fonts.google.com/) (Used for maintaining a clean while professional look with proper fonts improted from Google Fonts.)
+
+ # Tools
+ -Visual Studio Code (https://code.visualstudio.com/) (Used as the code editor for writing and managing the project's codebase)
+ Git (https://git-scm.com/)(Used for version control, allowing for tracking changes and collaborating on the project)
+ Github (https://github.com/) (Used for hosting the project's repository and facilitating collaboration and version control)
+
+ ## Manual Testing
+
+For any scenarios that have not been automated, the user stories were tested manually to ensure that the website functions as expected. Below are the detailed scenarios for each user story, along with observations on how the project looks and works on different browsers and screen sizes.
+
+### User Stories and Scenarios
+
+#### 1. As a shopper, I want to browse through a variety of sneakers, so that I can find the perfect pair for myself.
+- **Scenario**: Browse Products
+  1. Go to the homepage.
+  2. Navigate through different sections (Men, Women, Gift Cards) using the navigation bar.
+  3. Verify that a variety of sneakers are displayed with high-quality images and descriptions.
+
+#### 2. As a user, I want to view detailed product information and images, so that I can make an informed purchase decision.
+- **Scenario**: View Product Details
+  1. Click on a product from the product listing page.
+  2. Verify that the product page displays detailed information, including images, descriptions, prices, and available sizes.
+#### 3. As a  first time buyer, I want to apply promo codes, so that I can receive discounts on my purchases.
+- **Scenario**: Apply Promo Code
+  1. Go to the checkout page.
+  2. Enter a valid promo code and click the "Apply" button.
+  3. Verify that the discount is applied to the total cost.
+  4. Enter an invalid promo code and verify that an error message appears.
+#### 4. As a user with accessibility needs, I want the website to be screen reader-friendly, so that I can navigate and use the website efficiently.
+- **Scenario**: Accessibility
+  1. Use a screen reader to navigate through the website.
+  2. Verify that all interactive elements are accessible and properly labeled.
+
+#### 5. As a mobile user, I want the website to be responsive, so that I can have a seamless shopping experience on my phone or tablet.
+- **Scenario**: Responsive Design
+  1. Open the website on different devices (desktop, tablet, mobile).
+  2. Verify that the website layout adapts to different screen sizes and orientations.
+  3. Verify that all functionalities work seamlessly on different devices.
+
+### Browser and Device Compatibility
+
+The project was tested on the following browsers and devices to ensure compatibility and responsiveness:
+- Browsers: Google Chrome, Mozilla Firefox, Microsoft Edge, Safari
+- Devices: Desktop, Tablet, Mobile (iOS and Android)
+  All was compatiable and did not have large issues that will affect the user experience.
+
+### Observations and Issues
+
+- Form Validation: The form validation works correctly, ensuring that all required fields are filled out before proceeding with the checkout.
+- Responsive Design: The website adapts well to different screen sizes, providing a seamless experience on desktop, tablet, and mobile devices.
+- Accessibility: The website is screen reader-friendly, with properly labeled interactive elements.
+- Promo Code Application: The promo code application feature works as expected, applying discounts to the total cost.
+- Lottie Animations: The Lottie animations enhance the user experience during the checkout process.
+
+### Bugs and Issues
+- Minor Layout Issues on Older Browsers: Some minor layout issues were observed on older versions of browsers, which may affect the user experience.
+
+These observations and issues will be addressed in future updates to ensure a smooth and consistent user experience across all devices and browsers.
+
+# Credits
+
+## Contents
+- The review text was generated and copied from Chatgpt
+- Some text was from this site was taken from (https://artisan-lab.com/)
+  
+## Images
+The photos used from this site was taken from (https://artisan-lab.com/)
+
+## Acknowledges
+This website was an inspiration from (https://artisan-lab.com/)

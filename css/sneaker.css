@@ -1,7 +1,7 @@
 .hero {
     position:relative;
     height: 70vh;
-    background: url('../images/footwear\ lab.jpg') no-repeat center center/cover;
+    background: url('images/footwear\ lab.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;

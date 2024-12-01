@@ -1,7 +1,7 @@
 .hero {
     position:relative;
     height:100vh;
-    background: url('../images/EssenSneaimg.jpg') no-repeat center center/cover;
+    background: url('images/EssenSneaimg.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,7 +142,7 @@ select {
 .hero-Men-Classic-Sneaker {
     position:relative;
     height: 100vh;
-    background: url('../images/classicsneaker.jpg') no-repeat center center/cover;
+    background: url('images/classicsneaker.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,7 +162,7 @@ select {
 .hero-Men-Minimal-Sneaker{
     position:relative;
     height: 100vh;
-    background: url('../images/Men-Minimal-Sneaker-hero.jpg') no-repeat center center/cover;
+    background: url('images/Men-Minimal-Sneaker-hero.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -182,7 +182,7 @@ select {
 .hero-Men-High-Top-Essential-Sneaker{
     position:relative;
     height: 100vh;
-    background: url('../images/Men-High-Top-Essential-Sneaker-hero.jpg') no-repeat center center/cover;
+    background: url('images/Men-High-Top-Essential-Sneaker-hero.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,7 +202,7 @@ select {
 .hero-Women-Classic-Sneaker{
     position:relative;
     height: 100vh;
-    background: url('../images/Women-Classic-Sneaker.jpg') no-repeat center center/cover;
+    background: url('images/Women-Classic-Sneaker.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -222,7 +222,7 @@ select {
 .hero-Women-Essential-Sneaker{
     position:relative;
     height: 100vh;
-    background: url('../images/Women-essential-Sneaker-hero.jpg') no-repeat center center/cover;
+    background: url('images/Women-essential-Sneaker-hero.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -242,7 +242,7 @@ select {
 .hero-bomber-jacket{
     position:relative;
     height: 100vh;
-    background: url('../images/hero-bomber-jacket.jpg') no-repeat center center/cover;
+    background: url('images/hero-bomber-jacket.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -252,7 +252,7 @@ select {
 .hero-standard-chinos{
     position:relative;
     height: 100vh;
-    background: url('../images/hero-standard-chinos.jpg') no-repeat center center/cover;
+    background: url('images/hero-standard-chinos.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
