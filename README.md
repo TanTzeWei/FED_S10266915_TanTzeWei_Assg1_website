@@ -23,5 +23,7 @@ Exisitng Features:
 - Checkout Process: A straightforward and secure checkout which allows the user to see a summary of what they have bought where users can enter their shipping address and their card numbers to finish the payment.
 - Form Validation: The form is validated to ensure that all required fields have been filled out correctly before proceeding to the payment and the shipping
 - Lottie Animations: Integration of lottie animation to enhance the user experience on both mobile and desktop. When the user click on the place order, the animation will load and after a short while it will inform that the payment is successful. Once the user confirms it, it bring the user back to the homepage.
-- Responsive Design: 
+- Responsive Design: Responsive Design ensures that the website looks and work great on different devices no matter the screen size and width. This will help to allow the user to have a smooth and seamless experience on all devices
+- Accessibility: By having the website be screen reader friendly, we can ensure that people who are in need of the screen reader will still be able to navigate through the website effieciently and properly as we have included accessibility in our website.
+- 
 
