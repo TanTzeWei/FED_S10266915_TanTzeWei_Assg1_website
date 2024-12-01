@@ -1,7 +1,7 @@
 .hero {
     position:relative;
     height: 70vh;
-    background: url('images/Women-image.jpg') no-repeat center center/cover;
+    background: url('../images/Women-image.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,12 +42,6 @@
 #btn:hover {
     background-color: #555;
 }
-.background-section{
-    position:relative;
-    background-image: url("premium-white2.jpg");
-    background-size: cover;
-    padding:40px 20px;
-}
 .overlap{
     position:relative;
     background-color: white;
@@ -67,7 +61,7 @@
 .hero2 {
     position:relative;
     height: 70vh;
-    background: url('images/women-essen-sneaker.jpg') no-repeat center center/cover;
+    background: url('../images/women-essen-sneaker.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
