@@ -136,14 +136,23 @@
                 promoMessage.innerHTML = "Promo code already applied.";
             }
         });
-        let animationInstance=null;
+        const checkoutForm = document.getElementById("checkout-form");
+        const paymentForm = document.querySelector(".payment-info form");
         const placeOrderButton = document.querySelector(".checkout-button");
+        const successOverlay = document.getElementById("success-overlay");
+        const successAnimation = document.getElementById("success-animation");
+        let animationInstance=null;
             placeOrderButton.addEventListener("click", (e) => {
-                
+                e.preventDefault();
+                const isCheckoutFormValid = checkoutForm.checkValidity();
+                const isPaymentFormValid = paymentForm.checkValidity();
 
-                // Show animation
-                const successOverlay = document.getElementById("success-overlay");
-                const successAnimation = document.getElementById("success-animation");
+                if (!isCheckoutFormValid || !isPaymentFormValid) {
+                if (!isCheckoutFormValid) checkoutForm.reportValidity();
+                if (!isPaymentFormValid) paymentForm.reportValidity();
+                return; // Stop further execution if forms are invalid
+        }
+            
                 successAnimation.style.display = "block";
                 if (animationInstance) {
                 animationInstance.destroy();
@@ -151,7 +160,7 @@
                 // Use Lottie animation
                 animationInstance = lottie.loadAnimation({
                     container: successAnimation,
-                    path: '../animation/animation.json', // Replace with actual Lottie file path
+                    path: '/animation.json', // Replace with actual Lottie file path
                     renderer: 'svg',
                     loop: false,
                     autoplay: true
