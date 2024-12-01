@@ -29,7 +29,7 @@
 .desc{
     font-size:1.5em;
 }
-#btn{
+.btn{
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #333;
@@ -39,7 +39,7 @@
     font-size: 1em;
     cursor: pointer
 }
-#btn:hover {
+.btn:hover {
     background-color: #555;
 }
 .overlap{
