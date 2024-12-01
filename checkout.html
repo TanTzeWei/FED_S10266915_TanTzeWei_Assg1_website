@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="checkout.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
     <title>Checkout</title>
 </head>
 <body>
@@ -71,10 +72,12 @@
 
             <label for="name-on-card">Name on Card</label>
             <input type="text" id="name-on-card" name="name-on-card" required>
-            <button type="submit" class="checkout-button">Place order</button>
+            <button type="button" class="checkout-button">Place order</button>
           </form>
        </section>
     </div>
+    <div id="success-animation" class="success-animation"></div>
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const checkoutItemsContainer = document.getElementById("cart-items-container");
@@ -133,6 +136,41 @@
                 promoMessage.innerHTML = "Promo code already applied.";
             }
         });
+        let animationInstance=null;
+        const placeOrderButton = document.querySelector(".checkout-button");
+            placeOrderButton.addEventListener("click", (e) => {
+                e.preventDefault(); // Prevent form submission for demo purposes
+
+                // Show animation
+                const successOverlay = document.getElementById("success-overlay");
+                const successAnimation = document.getElementById("success-animation");
+                successAnimation.style.display = "block";
+                if (animationInstance) {
+                animationInstance.destroy();
+            }
+                // Use Lottie animation
+                animationInstance = lottie.loadAnimation({
+                    container: successAnimation,
+                    path: './animation.json', // Replace with actual Lottie file path
+                    renderer: 'svg',
+                    loop: false,
+                    autoplay: true
+                });
+
+                animationInstance.addEventListener('complete', () => {
+                    successAnimation.style.display = "none";
+                    setTimeout(() => {
+                        if (confirm("Payment Successful! Click OK to return to the homepage.")) {
+                        window.location.href = "index.html";
+                    }
+                }, 100);
+                    
+                });
+                animationInstance.addEventListener('error', (e) => {
+                console.error('Error loading animation:', e);
+                
+    });
+            });
         
     </script>
 </body>
